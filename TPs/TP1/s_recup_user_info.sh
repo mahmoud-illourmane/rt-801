@@ -4,9 +4,14 @@
 # Donne-lui les droits d'exécution avec la commande : chmod +x recup_info_utilisateur.sh.
 # Exécute le script : ./recup_info_utilisateur.sh.
 
+# Définition du chemin du répertoire où enregistrer les informations
+# Utilisation de la date et de l'heure pour créer un nom de dossier unique
+DIR_PATH="$PWD/res_script_CM_1"
+mkdir -p "$DIR_PATH"
+
 # Définition du chemin du fichier où enregistrer les informations
 # Utilisation de la date et de l'heure pour créer un nom de fichier unique
-FILE_PATH="/chemin/vers/le/dossier/utilisateur_info_$(date +%Y%m%d_%H%M%S).txt"
+FILE_PATH="$PWD/script_CM_1/utilisateur_info_$(date +%Y%m%d_%H%M%S).txt"
 
 # Récupération du nom de l'utilisateur actuel
 USER_NAME=$(whoami)
