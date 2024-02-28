@@ -1,0 +1,33 @@
+La date et l'heure actuelles sont : Sat Feb 17 10:00:22 CET 2024
+Liste des fichiers et dossiers:
+date_info.txt
+erreurs.txt
+fichier.txt
+resultat_et_erreurs.txt
+script_1.py
+script_1.sh
+script_10_fic_non_vide.sh
+script_11_nt.sh
+script_12_ot.sh
+script_13_for.sh
+script_14_while.sh
+script_15_untile.sh
+script_16_sort.sh
+script_17_grep.sh
+script_18_rediriger_flux_standard_erreur.sh
+script_19_read.sh
+script_2.py
+script_2.sh
+script_20_docker.sh
+script_21_ecriture_fic.sh
+script_3.py
+script_3.sh
+script_4.sh
+script_5_tab.sh
+script_6_file_exist.sh
+script_7_est_un _fic.sh
+script_8_est_un_repertoire.sh
+script_9_perm_fic.sh
+sortie_et_erreurs.txt
+test
+test2.txt

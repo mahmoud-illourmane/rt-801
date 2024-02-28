@@ -1,0 +1,3 @@
+Hello;Bonjour;Hola
+Azerty;Qwerty
+Python;Shell
