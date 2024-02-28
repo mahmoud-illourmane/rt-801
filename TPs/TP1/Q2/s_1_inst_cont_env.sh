@@ -6,6 +6,6 @@ echo "Mise à jour des paquets..."
 sudo apt-get update
 
 echo "Installation de LXC et des utilitaires de bridge..."
-sudo apt-get install -y lxc lxc-templates bridge-utils
+sudo apt install lxc-utils
 
 echo "Installation terminée."

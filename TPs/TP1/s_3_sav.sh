@@ -29,7 +29,7 @@ LOGIN=$(echo $LOGIN_PASSWORD | cut -d':' -f1)
 PASSWORD=$(echo $LOGIN_PASSWORD | cut -d':' -f2)
 
 # Utilisation de sshpass et sftp pour copier l'archive sur le serveur de sauvegarde
-# Assurez-vous que sshpass est installé, sinon installez-le avec `sudo apt-get install sshpass`
+# On s'assure que sshpass est installé, sinon on l'installe avec `sudo apt-get install sshpass`
 sshpass -p "$PASSWORD" sftp -oBatchMode=no -b - $LOGIN@$ADRESSE_SERVEUR <<EOF
 put ${NOM_ARCHIVE}.tar.gz
 bye
