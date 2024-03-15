@@ -3,7 +3,7 @@
 # Vérification du nombre de paramètres
 if [ "$#" -ne 5 ]; then
     echo -e "\e[31mErreur :\e[0m Je dois recevoir exactement 5 paramètres :\n"
-    echo -e "\e[31m1. Nom de l'hôte\n\e[0m\e[31m2. Identifiant de la carte réseau\n\e[0m\e[31m3. Adresse de la carte réseau\n\e[0m\e[31m4. Adresse de la passerelle\n\e[0m\e[31m5. Adresse du DNS\n\e[0mEx: \"8.8.8.8 8.8.4.4\"\e[0m"
+    echo -e "\e[31m1. Nom de l'hôte\n\e[0m\e[31m2. Identifiant de la carte réseau\n\e[0m\e[31m3. Adresse de la carte réseau\n\e[0m\e[31m4. Adresse de la passerelle\n\e[0m\e[31m5. Adresse du DNS \e[0mEx: \"8.8.8.8 8.8.4.4\"\e[0m"
     exit 1
 fi
 
