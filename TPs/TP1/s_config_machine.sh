@@ -2,7 +2,8 @@
 
 # Vérification du nombre de paramètres
 if [ "$#" -ne 5 ]; then
-    echo "Je dois recevoir exactement 5 paramètres : Nom de l'hôte, Identifiant de la carte réseau, Adresse de la carte réseau, Adresse de la passerelle, Adresse du DNS"
+    echo -e "\e[31mErreur :\e[0m Je dois recevoir exactement 5 paramètres :\n"
+    echo -e "\e[31m1. Nom de l'hôte\n\e[0m\e[31m2. Identifiant de la carte réseau\n\e[0m\e[31m3. Adresse de la carte réseau\n\e[0m\e[31m4. Adresse de la passerelle\n\e[0m\e[31m5. Adresse du DNS\n\e[0mEx: \"8.8.8.8 8.8.4.4\"\e[0m"
     exit 1
 fi
 
@@ -11,7 +12,7 @@ NOM_HOTE=$1                 # Ex : toto
 ID_CARTE_RESEAU=$2          # Ex : ensX/ethX
 ADRESSE_CARTE=$3            # Ex : 10.11.0.17/28
 ADRESSE_PASSERELLE=$4       # Ex : 10.0.11.80
-ADRESSE_DNS=$5              # Ex : [8.8.8.8, 8.8.4.4]
+ADRESSE_DNS=$5              # Ex : "8.8.8.8, 8.8.4.4"
 
 # 1. Affectation du nom de l'hôte
 echo "Je modifie le nom de l'hôte en $NOM_HOTE."
@@ -28,7 +29,7 @@ fi
 echo "\e[1;31mJe désactive l'interface réseau $ID_CARTE_RESEAU.\e[0m"
 sudo ip link set dev $ID_CARTE_RESEAU down
 
-# 4. Modification de l'adresse de la carte réseau
+# 4. Modification de l'adresse de la carte réseau (interface réseau)
 echo "\e[1;31mJe configure l'adresse IP de l'interface $ID_CARTE_RESEAU à $ADRESSE_CARTE.\e[0m"
 sudo ip addr add $ADRESSE_CARTE dev $ID_CARTE_RESEAU
 
