@@ -8,7 +8,7 @@ fi
 
 # Affectation des paramètres à des variables pour une meilleure lisibilité
 NOM_HOTE=$1                 # Ex : toto
-ID_CARTE_RESEAU=$2          # Ex : ens3/eth0
+ID_CARTE_RESEAU=$2          # Ex : ensX/ethX
 ADRESSE_CARTE=$3            # Ex : 10.11.0.17/28
 ADRESSE_PASSERELLE=$4       # Ex : 10.0.11.80
 ADRESSE_DNS=$5              # Ex : [8.8.8.8, 8.8.4.4]
