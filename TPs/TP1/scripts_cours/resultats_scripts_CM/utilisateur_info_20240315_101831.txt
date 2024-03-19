@@ -1,0 +1,3 @@
+Utilisateur : toto
+ID Utilisateur : 1000
+Groupes : [4, 24, 27, 30, 46, 116, 118, 1000]
