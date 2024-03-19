@@ -24,7 +24,6 @@ LOGIN=$4
 PASSWORD=$5
 
 # Création de l'archive avec tar
-# Création de l'archive avec tar
 if ! tar -czf "${NOM_ARCHIVE}.tar.gz" -C "$(dirname "$REPERTOIRE_A_SAUVEGARDER")" "$(basename "$REPERTOIRE_A_SAUVEGARDER")"; then
   echo -e "\e[31mÉchec de la création de l'archive.\e[0m"
   exit 1
@@ -39,6 +38,10 @@ EOF
 then
   echo -e "\e[31mÉchec de la copie de l'archive via SFTP.\e[0m"
   exit 1
+fi
+
+if [ -f "${NOM_ARCHIVE}.tar.gz" ]; then
+  rm -f "${NOM_ARCHIVE}.tar.gz"
 fi
 
 echo -e "\e[32mSauvegarde terminée : ${NOM_ARCHIVE}.tar.gz a été copié sur $ADRESSE_SERVEUR\e[0m"
