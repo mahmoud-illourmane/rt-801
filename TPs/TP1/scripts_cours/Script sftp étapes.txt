@@ -1,0 +1,12 @@
+Sur la VM source (qui effectue la sauvegarde)
+
+sudo vim ~/.ssh/config
+
+Host nom_vm_destination
+  Hostname adresse_ip_vm_destination
+  User utilisateur_sauvegarde
+  Port 22
+
+Tester la connexion sur le serveur sftp :
+
+sftp utilisateur_sauvegarde@adresse_ip_vm_destination
