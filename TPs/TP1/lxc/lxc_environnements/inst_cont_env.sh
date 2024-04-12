@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Usage ./inst_cont_env.sh <bridge_name> 
+
 C_G="\033[32m"
 C_R="\033[31m"
 C_Y="\033[33m"
