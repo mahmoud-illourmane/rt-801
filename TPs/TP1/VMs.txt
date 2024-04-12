@@ -1,2 +1,0 @@
-UBUNTU 1 : ip : toto 10.11.0.17/28
-UBUNTU 2 : ip : toto 10.11.0.18/28
