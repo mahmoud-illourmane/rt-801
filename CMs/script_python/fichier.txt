@@ -1,2 +1,0 @@
-Ceci est une ligne dans un fichier.
-Ceci est une nouvelle ligne ajoutée au fichier.
