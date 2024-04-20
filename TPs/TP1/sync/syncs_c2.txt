@@ -1,2 +1,0 @@
-schema.drawio
-fund_resp.sh

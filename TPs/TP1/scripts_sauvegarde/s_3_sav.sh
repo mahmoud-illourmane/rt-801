@@ -21,7 +21,7 @@ echo_() {
 
 # Vérification du nombre de paramètres
 if [ "$#" -ne 5 ]; then
-  echo_ $C_R "Usage: $0 <nom_archive> <repertoire_a_sauvegarder> \"adresse_serveur_sauvegarde\" \"login\" \"password\""
+  echo_ $C_R "Usage: $0 <nom_archive> <repertoire_a_sauvegarder> <adresse_serveur_sauvegarde> <login> <password>"
   exit 1
 fi
 
