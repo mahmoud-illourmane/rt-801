@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#
+#   Ce script est utilisé pour rechercher
+#   un fichier ou un répertoire depuis un path
+#  
+
 C_G="\033[32m"
 C_R="\033[31m"
 C_Y="\033[33m"
