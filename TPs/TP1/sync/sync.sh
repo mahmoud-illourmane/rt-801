@@ -3,7 +3,7 @@
 #
 #   Ce script est utilisé synchroniser
 #   Les fichiers et répertoires entre trois VM
-#  
+#   EX : ./sync.sh c2 '1toto;2' 192.168.1.3 c3 '1toto;2' 192.168.1.4
 
 C_G="\033[32m"
 C_R="\033[31m"
@@ -28,8 +28,6 @@ vm_2_login=$4
 pass_vm_2=$5
 ip_vm_2=$6
 
-echo_ $C_G "$pass_vm_1"
-
 echo_ $C_Y "Connexion à la première VM pour récuperer la liste des fichiers..."
 # Première connexion VM1
 if ! sshpass -p "$pass_vm_1" sftp "$vm_1_login@$ip_vm_1" <<EOF
@@ -45,7 +43,7 @@ echo_ $C_G "Liste des fichiers récupérés depuis la VM : $vm_1_login"
 sleep 2
 
 echo_ $C_Y "Connexion à la deuxième VM pour récuperer la liste des fichiers..."
-# Première connexion VM1
+# Première connexion VM2
 if ! sshpass -p "$pass_vm_2" sftp "$vm_2_login@$ip_vm_2" <<EOF
 cd /home/$vm_2_login/sync/scripts
 get "resources_"$vm_2_login".txt"
@@ -57,5 +55,6 @@ then
 fi
 echo_ $C_G "Liste des fichiers récupérés depuis la VM : $vm_2_login"
 sleep 2
+
 
 exit 0

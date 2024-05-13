@@ -38,6 +38,7 @@ for file in "${files[@]}"; do
     fi
 done
 
+# Trier les fichiers par ordres de modifications
 ls -t "${files[@]}" > tmp_file_list.txt
 if [ $? -ne 0 ]; then
     echo_ $C_R "Erreur lors de l'exécution de la commande ls -t."
